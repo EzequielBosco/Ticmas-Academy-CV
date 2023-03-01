@@ -1,3 +1,74 @@
 body {
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Mukta';
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+header {
+    background-image: url(imagen-fondo.jpg);
+    background-size: cover;
+}
+
+.wrap {
+    filter: blur(0.1px);
+    filter: opacity(95%)
+}
+
+i {
+    font-size: 2rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem
+}
+
+i:hover {
+    scale: calc(1.2)
+}
+
+#titulo {
+    margin-top:7rem;
+}
+
+.foto {
+    position: relative
+}
+
+.foto img{
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.foto:hover img{
+    border: 2px solid rgb(65, 65, 65);
+}
+
+main {
+    padding-top: 6rem;
+}
+
+.img-main {
+    background-image: url(codigo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+button {
+    border-radius: 5%;
+    border: 3px solid black;
+    font-size: 1.2rem;
+    background-color: white;
 }

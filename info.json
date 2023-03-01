@@ -1,9 +1,23 @@
-{
-    "nombre":"Luciano",
-    "apellido":"Gomez",
-    "fecha-nacimiento":"05/11/1997",
-    "provincia":"Buenos Aires",
-    "nacionalidad":"Argentina",
-    "celular":"11-3504-3982",
-    "correo":"lucianogomez97@gmail.com"
-}
+var info = [
+    {
+    "nombre":"Luciano"
+    },
+    {
+        "apellido":"Gomez"
+    },
+    {
+        "fecha-nacimiento":"05/11/1997"
+    },
+    {
+        "provincia":"Buenos Aires"
+    },
+    {
+        "nacionalidad":"Argentina"
+    },
+    {
+        "celular":"11-3504-3982"
+    },
+    {
+        "correo":"lucianogomez97@gmail.com"
+    }
+]
