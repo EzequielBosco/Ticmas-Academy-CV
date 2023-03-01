@@ -38,6 +38,10 @@ i:hover {
     margin-top:7rem;
 }
 
+.caja {
+    background-color: rgb(255, 255, 255);
+}
+
 .foto {
     position: relative
 }
@@ -63,12 +67,11 @@ p {
     padding-left: 0.3rem;
 }
 
-.img-main {
-    background-image: url(codigo.jpg);
+.img-fondo {
+    background-image: url(fondo-letras.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-
 
 button {
     border-radius: 5%;
@@ -76,3 +79,10 @@ button {
     font-size: 1.2rem;
     background-color: white;
 }
+
+section {
+    background-color: rgb(161, 161, 161);
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
