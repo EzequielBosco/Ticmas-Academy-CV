@@ -65,26 +65,52 @@
                 <div class="col">
                     <i class="fa-solid fa-user"></i>
                     <h3>Perfil</h3>
-                    <div class="d-flex justify-content-center">
-                        <p>Nombre:</p>
-                        <p id="nombre"></p>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <p>Nombre:</p>
-                        <p id="apellido"></p>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <p>Nombre:</p>
-                        <p id="fecha-n"></p>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-center">
+                            <p>Nombre:</p>
+                            <p id="nombre"></p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p>Apellido:</p>
+                            <p id="apellido"></p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p>Fecha de Nacimiento:</p>
+                            <p id="fecha-n"></p>
+                        </div>
                     </div>
                 </div>
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
                     <h3>Ubicacion</h3>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-center">
+                            <p>Localidad:</p>
+                            <p id="localidad"></p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p>Provincia:</p>
+                            <p id="provincia"></p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p>Nacionalidad:</p>
+                            <p id="nacionalidad"></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
                     <i class="fa-solid fa-phone"></i>
                     <h3>Contacto</h3>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-center">
+                            <p>Telefono:</p>
+                            <p id="telefono"></p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p>Correo:</p>
+                            <p id="correo"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,14 +119,29 @@
         @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap');
     </style>
     <script>
-        var info1 = document.getElementById("nombre");
-        info1.innerHTML=info[0].nombre;
+        var perfil = document.getElementById("nombre");
+        perfil.innerHTML=info[0].nombre;
 
-        var info2 = document.getElementById("apellido");
-        info2.innerHTML=info[1].apellido;
+        var perfil1 = document.getElementById("apellido");
+        perfil1.innerHTML=info[1].apellido;
 
-        var info3 = document.getElementById("fecha-n");
-        info3.innerHTML=info[2].fecha-n;
+        var perfil2 = document.getElementById("fecha-n");
+        perfil2.innerHTML=info[2].fecha;
+
+        var ubic = document.getElementById("localidad");
+        ubic.innerHTML=info[3].localidad;
+
+        var ubic1 = document.getElementById("provincia");
+        ubic1.innerHTML=info[4].provincia;
+
+        var ubic2 = document.getElementById("nacionalidad");
+        ubic2.innerHTML=info[5].nacionalidad;
+
+        var contacto = document.getElementById("telefono");
+        contacto.innerHTML=info[6].telefono;
+
+        var contacto1 = document.getElementById("correo");
+        contacto1.innerHTML=info[7].correo;
     </script>
     <script scr="funciones.js"></script>
 </body>

@@ -59,6 +59,10 @@ main {
     padding-top: 6rem;
 }
 
+p {
+    padding-left: 0.3rem;
+}
+
 .img-main {
     background-image: url(codigo.jpg);
     background-size: cover;

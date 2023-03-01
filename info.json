@@ -1,12 +1,15 @@
 var info = [
     {
-    "nombre":"Luciano"
+        "nombre":"Luciano"
     },
     {
         "apellido":"Gomez"
     },
     {
-        "fecha-nacimiento":"05/11/1997"
+        "fecha":"05-11-1997"
+    },
+    {
+        "localidad":"Moron"
     },
     {
         "provincia":"Buenos Aires"
@@ -15,7 +18,7 @@ var info = [
         "nacionalidad":"Argentina"
     },
     {
-        "celular":"11-3504-3982"
+        "telefono":"11-3504-3982"
     },
     {
         "correo":"lucianogomez97@gmail.com"
