@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Luciano Gomez</title>
+    <title>Curriculim Vitae Luciano Gomez</title>
     <script src="https://kit.fontawesome.com/55eb138f8c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,37 +16,37 @@
 </head>
 <body class="img-fondo">
     <header id="#inicio" class="wrap">
-        <nav class="navbar bg-light">
+        <nav class="navbar bg-light sticky-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <h4>Luciano Gomez</h4>
+                <h4 class="borde-bajo">Luciano Gomez</h4>
             </div>
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="p-2">
-                    <ul class="row justify-content-end">
-                        <li><a id="inicio">Inicio</a></li>
-                        <li><a>Sobre mi</a></li>
-                        <li><a>Habilidades</a></li>
-                        <li><a>Experiencia</a></li>
-                        <li><a>Contacto</a></li>
+                    <ul class="d-flex justify-content-end">
+                        <li><a href="#sobremi"><h5>Sobre mi</h5></a></li>
+                        <li><a href="#habilidades"><h5>Habilidades</h5></a></li>
+                        <li><a href="#estudios"><h5>Estudios</h5></a></li>
+                        <li><a href="#experiencia"><h5>Experiencia</h5></a></li>
+                        <li><a href="#contacto"><h5>Contacto</h5></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="text-center">
+        <div class="text-center m-4">
             <h1 id="titulo">Luciano Gomez</h1>
             <h3>Desarrollador Web</h3>
-            <button>Contacto</button>
+            <a href="#contacto"><button class="boton">Contacto</button></a>
         </div>
         <div class="container p-5 mb-5">
             <div class="d-flex justify-content-center">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>   
-                <i class="fa-brands fa-instagram"></i>        
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
         <br>
@@ -56,15 +56,15 @@
     </header>
     <main class="img-main">
         <div class="container text-center">
-            <h3>Sobre mi</h3>
+            <h3 id="sobremi">Sobre mi</h3>
             <h2>Informacion Personal</h2>
         </div>
         <br>
-        <div class="container-fluid">
-            <div class="d-flex text-center">
+        <div class="container">
+            <div class="d-flex text-center row row-cols-md-2 row-cols-lg-3">
                 <div class="col">
                     <i class="fa-solid fa-user"></i>
-                    <h3>Perfil</h3>
+                    <h3 class="borde-bajo">Perfil</h3>
                     <div class="d-flex flex-column">
                         <div class="d-flex justify-content-center">
                             <p>Nombre:</p>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col">
                     <i class="fa-solid fa-phone"></i>
-                    <h3>Contacto</h3>
+                    <h3 class="borde-bajo">Contacto</h3>
                     <div class="d-flex flex-column">
                         <div class="d-flex justify-content-center">
                             <p>Telefono:</p>
@@ -115,14 +115,14 @@
             </div>
         </div>
     </main>
-    <section>
+    <section class="seccion-gris">
         <div class="text-center">
-            <h2 class="p-2">Habilidades</h2>
+            <h2 class="p-3" id="habilidades">Habilidades</h2>
             <h3>Me especializo en:</h3>
         </div>
         <br>
         <div class="container">
-            <div class="d-flex text-center">
+            <div class="d-flex text-center row row-cols-md-3 row-cols-lg-6">
                 <div class="col">
                     <h3 class="caja">HTML</h3>
                     <div class="d-flex flex-column">
@@ -131,10 +131,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <h3>CSS</h3>
+                    <h3>REACT</h3>
                     <div class="d-flex flex-column">
                         <p>Nivel de conocimiento</p>
-                        <p><b>ALTO</b></p>
+                        <p class="borde-bajo"><b>MEDIO</b></p>
                     </div>
                 </div>
                 <div class="col">
@@ -148,57 +148,143 @@
                     <h3>PYTHON</h3>
                     <div class="d-flex flex-column">
                         <p>Nivel de conocimiento</p>
-                        <p><b>Medio</b></p>
+                        <p class="borde-bajo"><b>MEDIO</b></p>
                     </div>
                 </div>
                 <div class="col">
-                    <h3 class="caja">ANGULAR</h3>
+                    <h3 class="caja">CSS</h3>
                     <div class="d-flex flex-column">
                         <p>Nivel de conocimiento</p>
-                        <p><b>Medio</b></p>
+                        <p><b>ALTO</b></p>
                     </div>
                 </div>
                 <div class="col">
                     <h3>VUE</h3>
                     <div class="d-flex flex-column">
                         <p>Nivel de conocimiento</p>
-                        <p><b>Bajo</b></p>
+                        <p class="borde-bajo"><b>BAJO</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section>
+        <div class="text-center">
+            <h2 class="p-3" id="estudios">Estudios</h2>
+        </div>
+        <br>
+        <div class="container">
+            <div class="d-flex flex-column text-center">
+                <div class="col">
+                    <h3 class="caja-anim">Bachiller en Economía</h3>
+                    <div>
+                        <h5><b>Colegio Nacional de Buenos Aires</b></h5>
+                        <button id="mostrar" class="boton">Mostrar progreso...</button>
+                        <p id="progreso"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="col">
+                    <h3 class="caja-anim">CS50: Introduction to Computer Science</h3>
+                    <div>
+                        <h5><b>HARVARD UNIVERSITY</b></h5>
+                        <button id="mostrar0" class="boton">Mostrar progreso...</button>
+                        <p id="progreso0"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="col">
+                    <h3 class="caja-anim">Tecnicatura en Desarollo Web</h3>
+                    <div>
+                        <h5><b>UNIVERSIDAD LA MATANZA</b></h5>
+                        <button id="mostrar1" class="boton">Mostrar progreso...</button>
+                        <p id="progreso1"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="col">
+                    <h3 class="caja-anim">Carrera de Desarrollo Full Stack</h3>
+                    <div>
+                        <h5><b>CODERHOUSE</b></h5>
+                        <button id="mostrar2" class="boton">Mostrar progreso...</button>
+                        <p id="progreso2"></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="img-fondo">
-
-    </div>
+    <section class="seccion-gris">
+        <div class="text-center">
+            <h2 class="p-3" id="experiencia">Experiencia</h2>
+        </div>
+        <br>
+        <div class="container">
+            <div class="d-flex text-center row row-cols-md-2 row-cols-lg-2 m-5">
+                <div class="col">
+                    <div class="col d-flex">
+                        <h3 class="borde-bajo text-white">Desarrollador Front-End</h3>
+                        <div class="d-flex flex-column">
+                            <p>2019 - 2020</p>
+                            <p><b>ACCENTURE</b></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col d-flex">
+                        <h3 class="borde-bajo text-white">Programador Junior</h3>
+                        <div class="d-flex flex-column">
+                            <p>2021 - 2022</p>
+                            <p><b>GOOGLE</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col d-flex">
+                        <h3 class="borde-bajo text-white">Desarrollador Web</h3>
+                        <div class="d-flex flex-column">
+                            <p>2020 - 2022</p>
+                            <p><b>FREELANCE</b></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col d-flex">
+                        <h3 class="borde-bajo text-white">Programador Senior</h3>
+                        <div class="d-flex flex-column">
+                            <p>2022 - PRESENTE</p>
+                            <p><b>MERCADOLIBRE</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <footer>
+        <div class="text-center">
+            <i class="fa-solid fa-phone"></i>
+            <h2 class="p-3" id="contacto">Contacto</h2>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="d-flex justify-content-center">
+                <h4>Telefono: 11-3504-3982</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h4>Correo: lucianogomez97@gmail.com</h4>
+            </div>
+        </div>
+        <div class="container mb-5 mt-3">
+            <div class="d-flex justify-content-center">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap');
     </style>
-    <script>
-        var perfil = document.getElementById("nombre");
-        perfil.innerHTML=info[0].nombre;
-
-        var perfil1 = document.getElementById("apellido");
-        perfil1.innerHTML=info[1].apellido;
-
-        var perfil2 = document.getElementById("fecha-n");
-        perfil2.innerHTML=info[2].fecha;
-
-        var ubic = document.getElementById("localidad");
-        ubic.innerHTML=info[3].localidad;
-
-        var ubic1 = document.getElementById("provincia");
-        ubic1.innerHTML=info[4].provincia;
-
-        var ubic2 = document.getElementById("nacionalidad");
-        ubic2.innerHTML=info[5].nacionalidad;
-
-        var contacto = document.getElementById("telefono");
-        contacto.innerHTML=info[6].telefono;
-
-        var contacto1 = document.getElementById("correo");
-        contacto1.innerHTML=info[7].correo;
-    </script>
-    <script scr="funciones.js"></script>
+    <script src="funciones.js"></script>
 </body>
 </html>

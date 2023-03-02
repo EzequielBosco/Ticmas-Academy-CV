@@ -14,6 +14,12 @@ h3 {
     font-size: 2rem;
 }
 
+li {
+    padding-right: 2rem;
+    margin-top: 2rem;
+    color: black
+}
+
 header {
     background-image: url(imagen-fondo.jpg);
     background-size: cover;
@@ -24,22 +30,46 @@ header {
     filter: opacity(95%)
 }
 
-i {
-    font-size: 2rem;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem
-}
-
-i:hover {
-    scale: calc(1.2)
-}
-
 #titulo {
     margin-top:7rem;
 }
 
-.caja {
-    background-color: rgb(255, 255, 255);
+button {
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.boton {
+    border: 3px solid black;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    animation-name: efecto-boton;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes efecto-boton {
+    0% {color:#000000;
+        background-color: rgb(255, 255, 255);
+        border: 3px solid rgb(0, 0, 0);
+    }
+    100% {color:rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        border: 3px solid rgb(255, 255, 255);}
+}
+
+i {
+    font-size: 2rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    color:rgb(29, 29, 29)
+}
+
+i:hover {
+    scale: calc(1.2)
 }
 
 .foto {
@@ -59,6 +89,45 @@ i:hover {
     border: 2px solid rgb(65, 65, 65);
 }
 
+.caja {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 129, 98)
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+    animation-name: efecto-caja;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.caja-anim {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 129, 98);
+}
+
+.caja-anim:hover {
+    animation-name: efecto-caja;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes efecto-caja {
+    0% {color:#ffffff;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 129, 98);
+    }
+    100% {color:rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);}
+}
+
+.borde-bajo {
+    border-bottom: 2px solid rgb(255, 129, 98)
+}
+
 main {
     padding-top: 6rem;
 }
@@ -67,22 +136,15 @@ p {
     padding-left: 0.3rem;
 }
 
-.img-fondo {
-    background-image: url(fondo-letras.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-button {
-    border-radius: 5%;
-    border: 3px solid black;
-    font-size: 1.2rem;
-    background-color: white;
-}
-
-section {
-    background-color: rgb(161, 161, 161);
+.seccion-gris {
+    background-color: rgb(148, 148, 148);
     margin-top: 2rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
+footer i {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+}
