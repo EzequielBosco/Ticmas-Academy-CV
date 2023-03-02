@@ -27,7 +27,7 @@ header {
 
 .wrap {
     filter: blur(0.1px);
-    filter: opacity(95%)
+    filter: opacity(98%)
 }
 
 #titulo {
@@ -102,9 +102,19 @@ i:hover {
     animation-timing-function: ease;
 }
 
+.img-fondo {
+    background-image: url(fondo-body.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .caja-anim {
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 129, 98);
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .caja-anim:hover {
@@ -147,4 +157,54 @@ p {
 footer i {
     margin-left: 1.8rem;
     margin-right: 1.8rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    footer i {
+        margin-left: 4rem;
+        margin-right: 1.9rem;
+    }
+
+    .img-fondo {
+        background-image: url(fondo-body-1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    footer i {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .img-fondo {
+        background-image: url(fondo-body-2.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
 }
